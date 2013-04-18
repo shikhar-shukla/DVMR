@@ -1,19 +1,18 @@
 #include <iostream>
 #include <vector>
 #include "Link.h"
-#include "VM.h"
+#include "VirtualMachine.h"
 
 using namespace std;
-
-//Network State File will be read and fields will be populated on the basis of this
 
 class DataCenter
 {
 	private:
-		long noOfVMs;
-		long noOfSlots;
-		vector<VM*> virtualMachines;
-		vector<Link*> connectedLinks;
+		long dcid;
+		long no_of_vms;
+		long no_of_free_slots;
+		vector<VirtualMachine*> virtual_machines;
+		vector<Link*> connecte_links;
 	public:
 		DataCenter(/*parameter list*/) // Parameterized Constructor
 		{
@@ -22,11 +21,11 @@ class DataCenter
 			//initialize vm vector to null
 			//initialize link vector to null
 		}
-		addVM()
+		void addVM()
 		{
 			//adding a VM to the vm vector based on the no of VMs and input file
 		}
-		addLinks()
+		void addLinks()
 		{
 			//adding links between data centers
 		}

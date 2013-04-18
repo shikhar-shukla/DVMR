@@ -8,12 +8,13 @@ using namespace std;
 class Link
 {
 	private:
+		long linkid;
 		DataCenter *end1;
 		DataCenter *end2;
 		float threshold;
 		float utilization;
 	public:
-		Link()
+		Link(/*parameter list - dc1 nad dc2*/)
 		{
 			//create link object and initialize threshold and end points
 		}
